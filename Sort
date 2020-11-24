@@ -1,0 +1,14 @@
+     int[] arr = new int[]{20, 2, 10, 6, 52, 31, 0, 45, 79, 40};
+        System.out.println(Arrays.toString(arr));
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1)
+                break;
+            for (int y = i+1; y < arr.length; y++) {
+                if (arr[i] > arr[y]) {
+                    int t = arr[y];//1
+                    arr[y] = arr[i];//3
+                    arr[i] = t;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(arr));
