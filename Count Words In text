@@ -1,0 +1,14 @@
+        String str = "This this is is done by Saket Saket";
+
+        String[] strarrays = str.split(" ");
+        Map<String, Integer> strmap = new HashMap<>();
+
+        for (int i = 0; i < strarrays.length; i++) {
+            if (strmap.containsKey(strarrays[i])) {
+
+                strmap.put(strarrays[i], strmap.get(strarrays[i]) + 1);
+            }
+            else
+                strmap.put(strarrays[i], 1);
+        }
+        System.out.println(strmap);
