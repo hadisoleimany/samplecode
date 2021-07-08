@@ -1,0 +1,10 @@
+     String str1 = "Saket Saurav        is a QualityAna    list";
+        System.out.println(str1.replace(" ", ""));
+        // without replace
+
+        StringBuffer buffer = new StringBuffer();
+        for (String a : str1.split("")) {
+            if (!a.equals(" "))
+                buffer.append(a);
+        }
+        System.out.println(buffer);
